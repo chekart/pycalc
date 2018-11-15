@@ -7,13 +7,13 @@ Supported operations:
 - brackets ()
 - negation
 
-####Algorythms used
+#### Algorythms used
 
 Custom written tokenize logic based on [Rob Pike's](https://github.com/robpike) talk "Lexical Scanning in Go"
 
 Shunting yard extended with negate operation used for expression evaluation
 
-####Notes
+#### Notes
 
 For simplicity all custom exceptions are of base class Exception
 
