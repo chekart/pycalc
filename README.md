@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/chekart/pycalc.svg?branch=dev)](https://travis-ci.org/chekart/pycalc)
+
 # pycalc
 
 Parsing mathematical expressions in Python
