@@ -15,7 +15,7 @@ class Scanner:
         return ch
 
     def unread(self):
-        """Move current position ony symbol backward if it's possible"""
+        """Move current position one symbol backward if it's possible"""
         self.__pos = max(self.__pos - 1, 0)
 
     def peek(self):
