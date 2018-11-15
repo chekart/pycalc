@@ -20,6 +20,10 @@ def tokenize(text):
     Traceback (most recent call last):
         ...
     Exception: Unknown token a
+    >>> tokenize('12.3e1.5 + 1')
+    Traceback (most recent call last):
+        ...
+    Exception: Unknown number format 12.3e1.5
     """
     scanner = Scanner(text)
     tokens = []
@@ -65,7 +69,7 @@ def scan_number(scanner, tokens):
 
     # failed to convert, bad number format
     if value is None:
-        raise Exception('Unknown token {}'.format(value))
+        raise Exception('Unknown number format {}'.format(value_str))
 
     token = Token('NUM', value)
     tokens.append(token)
